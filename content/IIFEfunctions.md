@@ -9,7 +9,7 @@ title: "IIFE Functions in JavaScript"
 
 ```js
 (() => {
-	console.log('hola')
+	console.log('Hello World')
 })()
 ```
 **IIFE** functions look like that, they are wrapped between parentheses and at the end they are wrapped back again by two parentheses this time invoking the function.
@@ -29,9 +29,9 @@ This kind of functions were used in the past to make the *async - await* work in
 ### Reason 2: Variable Scope
 
 ```js
-let a = "Hola";
+let a = "Hello";
 (() => {
-	let b = " Mundo"
+	let b = " World"
 	console.log(a + b)
 })();
 ```
