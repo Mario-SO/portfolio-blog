@@ -1,10 +1,10 @@
 ---
 date: 2022-07-21T15:29:24+02:00
 draft: false
-tags: [concept, programming, JavaScript]
+tags: [concept, JavaScript, programming]
 title: "Callback Vs. Promise functions in JavaScript"
 ---
-## Diferencias entre Callback y Promise en Js
+## Differences between Callback and Promise functions in JavaScript
 
 ```js
 const operation = (n1, n2, op) => {

@@ -1,17 +1,13 @@
 ---
-date: 2022-08-03T15:35:06+02:00
-draft: true
-tags: [algorithms, programming, concept]
+date: 2022-07-30T15:35:06+02:00
+draft: false
+tags: [concept, JavaScript, programming, algorithms]
 title: "Tail recursion concept"
 ---
 
-## Tail Recursion
+### Tail Recursion
 
-Se conoce como recursión de cola a aquella función cuya última instrucción es la llamada recursiva.
-
-We call **tail recursion** to a function which has its last instruction being a recursive call.
-
-**They are recursive functions that can be used without the fear of suffering a stack overflow.**
+We call **tail recursion** to a function which has its last instruction being a recursive call. **They are recursive functions that can be used without the fear of suffering a stack overflow.**
 
 Normal recursion ❌
 
