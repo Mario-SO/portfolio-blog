@@ -9,9 +9,8 @@ permalinks:
   post: /:filename/
 
 params:
-  containerMaxWidth: 300px
   dateFormat: 2 Jan, 2006
-  footerText: mariodev.xyz
+  footerText: blog.mariodev.xyz
 
 markup:
   defaultMarkdownHandler: goldmark
