@@ -1,0 +1,10 @@
+<h3>
+    🏷 All tags
+</h3>
+<ul>
+    <a class="btn btn-sm btn-outline-dark tag-btn" href="/">📝 Blog</a>
+    {{ range $.Site.Taxonomies.tags.ByCount.Reverse }}
+    <a class="btn btn-sm btn-outline-dark tag-btn" href="/tags/{{ .Name }}"> {{ .Name }} <small>({{ .Count
+            }})</small></a>
+    {{end}}
+</ul>
