@@ -1,7 +1,7 @@
 ---
 date: 2022-07-30T15:35:06+02:00
 draft: false
-tags: [concept, JavaScript, programming, algorithms]
+tags: [Concept, JavaScript, Programming, Algorithms]
 title: "Tail recursion"
 ---
 
