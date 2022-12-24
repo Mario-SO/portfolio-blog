@@ -21,6 +21,8 @@ With so many frameworks to choose from, it can be difficult for developers to kn
 
 This constant churn can be frustrating and time-consuming for developers, and it can also make it difficult for companies to make long-term decisions about which frameworks to use and invest in.
 
+Still, there seems to be a big consensus on using the 2 biggest ones (React & Angular) at least for big companies and bigger side projects that devs may want to create.
+
 ## The Future of JavaScript Frameworks
 
 It is difficult to predict exactly where the landscape of JavaScript frameworks is headed. It is possible that some of the current frameworks will continue to dominate, while others may fall by the wayside. It is also possible that new frameworks will emerge, further adding to the already overcrowded landscape.
