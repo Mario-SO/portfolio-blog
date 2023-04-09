@@ -41,6 +41,6 @@ Another crucial part of this journey is to engage with the community. Talk to pe
 
 This post was kinda lenghty, next ones won't be like this. I will try to make this posts as useful as possible for a newcomer, therefore, they will include new learnings and technical stuff I find cool to share.
 
-I have some experience coding, but I consider myself quite a junior in Solidity, so if you are in the same situation, welcome and have reading learning with me.
+I have some experience coding, but I consider myself quite a junior in Solidity, so if you are in the same situation, welcome and have fun learning with me.
 
 Consider giving a follow [@mariodev__](https://twitter.com/mariodev__). See you soon mate, and keep hacking!
