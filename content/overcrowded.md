@@ -1,6 +1,6 @@
 ---
 date: 2022-12-25T15:39:32+02:00
-draft: false
+draft: true
 tags: [Thoughts, Programming]
 title: "The Overcrowded Landscape of JavaScript Frameworks"
 ---

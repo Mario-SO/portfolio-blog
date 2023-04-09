@@ -6,56 +6,15 @@
     <description>Recent content in Programming on Mario S.O</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Dec 2022 15:39:32 +0200</lastBuildDate><atom:link href="https://blog.mariodev.xyz/tags/programming/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Overcrowded Landscape of JavaScript Frameworks</title>
-      <link>https://blog.mariodev.xyz/overcrowded/</link>
-      <pubDate>Sun, 25 Dec 2022 15:39:32 +0200</pubDate>
-      
-      <guid>https://blog.mariodev.xyz/overcrowded/</guid>
-      <description>JavaScript has come a long way since its inception as a simple scripting language for the web. Today, it is used for a wide range of purposes, from front-end web development to building mobile apps and even desktop applications.
-One area where JavaScript has seen particularly rapid growth is in the realm of frameworks. A JavaScript framework is a set of pre-written code that provides a structure for building web applications, making it easier and faster to develop complex applications.</description>
-    </item>
-    
+    <lastBuildDate>Sat, 24 Dec 2022 21:55:00 +0200</lastBuildDate><atom:link href="https://blog.mariodev.xyz/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Differences Between ERC721 and ERC1155 Token Standards</title>
       <link>https://blog.mariodev.xyz/tokendiffs/</link>
       <pubDate>Sat, 24 Dec 2022 21:55:00 +0200</pubDate>
       
       <guid>https://blog.mariodev.xyz/tokendiffs/</guid>
-      <description>The Ethereum network is home to a variety of different token standards, each with its own unique features and capabilities. Two of the most well-known token standards are ERC721 and ERC1155.
-While both standards are used to create non-fungible tokens (NFTs) on the Ethereum network, they have some key differences that are important to understand.
-ERC721 ERC721 is a token standard that defines a set of rules for creating and managing non-fungible tokens on the Ethereum network.</description>
-    </item>
-    
-    <item>
-      <title>IIFE Functions in JavaScript</title>
-      <link>https://blog.mariodev.xyz/iifefunctions/</link>
-      <pubDate>Mon, 01 Aug 2022 14:39:32 +0200</pubDate>
-      
-      <guid>https://blog.mariodev.xyz/iifefunctions/</guid>
-      <description>IIFE - Immediately Invoked Function Expression (() =&amp;gt; { console.log(&amp;#39;Hello World&amp;#39;) })() IIFE functions look like that, they are wrapped between parentheses and at the end they are wrapped back again by two parentheses this time invoking the function.
-Why would you use an IIFE? Reason 1: Async - Await (async () =&amp;gt; { await fetch(&amp;#39;https://mariodev.xyz&amp;#39;) })(); This kind of functions were used in the past to make the async - await work in node, but nowadays it is not necessary anymore because top-level await is supported in modern versions of node and most runtimes.</description>
-    </item>
-    
-    <item>
-      <title>Tail recursion</title>
-      <link>https://blog.mariodev.xyz/tailrecursion/</link>
-      <pubDate>Sat, 30 Jul 2022 15:35:06 +0200</pubDate>
-      
-      <guid>https://blog.mariodev.xyz/tailrecursion/</guid>
-      <description>What is tail recursion? We call tail recursion to a function which has its last instruction being a recursive call. They are recursive functions that can be used without the fear of suffering a stack overflow.
-Examples Normal recursion ❌ def factorial (n): if n == 1: return 1 return n * factorial(n-1) This is an example of a normal recursion, because the last operation is not the recursive call, even though it seems that it is the last thing, in reality, the very last thing this code does is the multiplication.</description>
-    </item>
-    
-    <item>
-      <title>Callback Vs. Promise functions in JavaScript</title>
-      <link>https://blog.mariodev.xyz/callbackvspromise/</link>
-      <pubDate>Thu, 21 Jul 2022 15:29:24 +0200</pubDate>
-      
-      <guid>https://blog.mariodev.xyz/callbackvspromise/</guid>
-      <description>Differences between Callback and Promise functions in JavaScript const operation = (n1, n2, op) =&amp;gt; { return op(n1, n2) } operation (1, 2, (a, b) =&amp;gt; a + b) In this case we can see a Callback function being this, the function op which is then passed as a parameter to the operation function.
-Nowadays is uncommon to use callbacks unless they are required by a library or maybe you could encounter one in wild west of legacy code.</description>
+      <description>The Ethereum network is a fascinating ecosystem of smart contracts and decentralized applications. One of the most exciting features of Ethereum is the ability to create non-fungible tokens (NFTs) using different token standards such as ERC721 and ERC1155.
+ERC721: Uniquely Distinct ERC721 tokens are the original NFTs on the Ethereum network, and they represent individual, unique assets that cannot be replicated or exchanged for other tokens on a one-to-one basis. They are ideal for creating digital assets that require proof of ownership or authenticity, such as artwork or collectibles.</description>
     </item>
     
   </channel>

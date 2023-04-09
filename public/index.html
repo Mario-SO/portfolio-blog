@@ -11157,127 +11157,134 @@
   
   <title>Mario S.O</title>
   <style>
-  body {
-    background-color: beige;
-  }
+    @font-face {
+        font-family: "jetbrains";
+        src: url("../../static/fotns/JetBrainsMono-SemiBold.woff2");
+    }
 
-  body::-webkit-scrollbar {
-    display: none;
-  }
+    body {
+        background-color: beige;
+        font-family: "jetbrains";
+    }
 
-  .container {
-    max-width: 750px;
-  }
+    body::-webkit-scrollbar {
+        display: none;
+    }
 
-  #main {
-    margin-top: 1em;
-    margin-bottom: 4em;
-  }
+    .container {
+        max-width: 750px;
+    }
 
-  #main h1 {
-    width: 100%;
-    padding: 0px 4.5px 3px 3px;
-    margin-bottom: 0.5em;
+    #main {
+        margin-top: 1em;
+        margin-bottom: 4em;
+    }
 
-    font-size: 2em;
-    font-weight: bold;
+    #main h1 {
+        width: 100%;
+        padding: 0px 4.5px 3px 3px;
+        margin-bottom: 0.5em;
 
-    border-radius: 5px;
-    border: 3px solid #010a1f;
-    box-shadow: 2px 2px #010a1f;
-    background-color: #f23557;
-    color: gold;
-  }
+        font-size: 2em;
+        font-weight: bold;
 
-  #main h2 {
-    width: 100%;
-    padding: 0px 4.5px 3px 3px;
-    margin-bottom: 0.5em;
+        border-radius: 5px;
+        border: 3px solid #010a1f;
+        box-shadow: 2px 2px #010a1f;
+        background-color: #f23557;
+        color: gold;
+    }
 
-    font-size: 2em;
-    font-weight: bold;
+    #main h2 {
+        width: 100%;
+        padding: 0px 4.5px 3px 3px;
+        margin-bottom: 0.5em;
 
-    border-radius: 5px;
-    border: 3px solid #010a1f;
-    box-shadow: 2px 2px #010a1f;
-    background-color: #00a9ff;
-    color: gold;
-  }
+        font-size: 2em;
+        font-weight: bold;
 
-  #main h3 {
-    width: 100%;
-    padding: 0px 4.5px 3px 3px;
-    margin-bottom: 0.5em;
+        border-radius: 5px;
+        border: 3px solid #010a1f;
+        box-shadow: 2px 2px #010a1f;
+        background-color: #00a9ff;
+        color: gold;
+    }
 
-    font-size: 1.5em;
-    font-weight: bold;
+    #main h3 {
+        width: 100%;
+        padding: 0px 4.5px 3px 3px;
+        margin-bottom: 0.5em;
 
-    border-radius: 5px;
-    border: 3px solid #010a1f;
-    box-shadow: 2px 2px #010a1f;
-    background-color: beige;
-    color: black;
-  }
+        font-size: 1.5em;
+        font-weight: bold;
 
-  #home-jumbotron {
-    background-color: inherit;
-  }
+        border-radius: 5px;
+        border: 3px solid #010a1f;
+        box-shadow: 2px 2px #010a1f;
+        background-color: beige;
+        color: black;
+    }
 
-  #footer {
-     
-    margin-top: 4em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border-top: 2px solid #212529;
-  }
+    #home-jumbotron {
+        background-color: inherit;
+    }
 
-  .font-125 {
-    font-size: 125%;
-    color: #f23557;
-  }
+    #footer {
+         
+        margin-top: 4em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        border-top: 2px solid #212529;
+    }
 
-  .tag-btn {
-    margin-bottom: 0.3em;
-    color: #00a9ff;
-  }
+    .font-125 {
+        font-size: 125%;
+        color: #f23557;
+    }
 
-  pre {
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 16px;
-  }
+    .tag-btn {
+        margin-bottom: 0.3em;
+        color: #00a9ff;
+    }
 
-  pre code {
-    padding: 0;
-    font-size: inherit;
-    color: inherit;
-    background-color: transparent;
-    border-radius: 0;
-  }
+    pre {
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 16px;
+    }
 
-  code {
-    padding: 2px 4px;
-    font-size: 90%;
-    color: #c7254e;
-    background-color: #f9f2f4;
-    border-radius: 4px;
-  }
+    pre code {
+        padding: 0;
+        font-size: inherit;
+        color: inherit;
+        background-color: transparent;
+        border-radius: 0;
+    }
 
-  img,
-  iframe,
-  embed,
-  video,
-  audio {
-    max-width: 100%;
-  }
+    code {
+        padding: 2px 4px;
+        font-size: 90%;
+        color: #c7254e;
+        background-color: #f9f2f4;
+        border-radius: 4px;
+    }
 
-  .card-img,
-  .card-img-top,
-  .card-img-bottom {
-    width: initial;
-  }
+    img,
+    iframe,
+    embed,
+    video,
+    audio {
+        max-width: 100%;
+    }
+
+    .card-img,
+    .card-img-top,
+    .card-img-bottom {
+        width: initial;
+    }
 </style>
+
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -11287,25 +11294,6 @@
 
 <h1 class="page-title">Dev-Log</h1>
 
-
-<p>
-  <a class="font-125" href="https://blog.mariodev.xyz/overcrowded/">The Overcrowded Landscape of JavaScript Frameworks</a>
-  <br>
-  
-
-<i data-feather="calendar"></i> <time datetime="2022-12-25">25 Dec, 2022</time>
-
-<br>
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://blog.mariodev.xyz/tags/programming">Programming</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://blog.mariodev.xyz/tags/thoughts">Thoughts</a>
-
-
-</p>
 
 <p>
   <a class="font-125" href="https://blog.mariodev.xyz/tokendiffs/">Differences Between ERC721 and ERC1155 Token Standards</a>
@@ -11326,91 +11314,6 @@
 
 </p>
 
-<p>
-  <a class="font-125" href="https://blog.mariodev.xyz/evilness/">Understanding the Nuances of Harmful Behavior: Evil vs. Ignorance and Arrogance</a>
-  <br>
-  
-
-<i data-feather="calendar"></i> <time datetime="2022-12-24">24 Dec, 2022</time>
-
-<br>
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://blog.mariodev.xyz/tags/thoughts">Thoughts</a>
-
-
-</p>
-
-<p>
-  <a class="font-125" href="https://blog.mariodev.xyz/iifefunctions/">IIFE Functions in JavaScript</a>
-  <br>
-  
-
-<i data-feather="calendar"></i> <time datetime="2022-08-01">1 Aug, 2022</time>
-
-<br>
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://blog.mariodev.xyz/tags/concept">Concept</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://blog.mariodev.xyz/tags/javascript">JavaScript</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://blog.mariodev.xyz/tags/programming">Programming</a>
-
-
-</p>
-
-<p>
-  <a class="font-125" href="https://blog.mariodev.xyz/tailrecursion/">Tail recursion</a>
-  <br>
-  
-
-<i data-feather="calendar"></i> <time datetime="2022-07-30">30 Jul, 2022</time>
-
-<br>
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://blog.mariodev.xyz/tags/algorithms">Algorithms</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://blog.mariodev.xyz/tags/concept">Concept</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://blog.mariodev.xyz/tags/javascript">JavaScript</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://blog.mariodev.xyz/tags/programming">Programming</a>
-
-
-</p>
-
-<p>
-  <a class="font-125" href="https://blog.mariodev.xyz/callbackvspromise/">Callback Vs. Promise functions in JavaScript</a>
-  <br>
-  
-
-<i data-feather="calendar"></i> <time datetime="2022-07-21">21 Jul, 2022</time>
-
-<br>
-<i data-feather="tag"></i>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://blog.mariodev.xyz/tags/concept">Concept</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://blog.mariodev.xyz/tags/javascript">JavaScript</a>
-
-
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://blog.mariodev.xyz/tags/programming">Programming</a>
-
-
-</p>
-
 
 
       <h3>
@@ -11421,15 +11324,7 @@
     
     <a class="btn btn-sm btn-outline-dark tag-btn" href="/tags/solidity"> solidity <small>(1)</small></a>
     
-    <a class="btn btn-sm btn-outline-dark tag-btn" href="/tags/algorithms"> algorithms <small>(1)</small></a>
-    
-    <a class="btn btn-sm btn-outline-dark tag-btn" href="/tags/thoughts"> thoughts <small>(2)</small></a>
-    
-    <a class="btn btn-sm btn-outline-dark tag-btn" href="/tags/javascript"> javascript <small>(3)</small></a>
-    
-    <a class="btn btn-sm btn-outline-dark tag-btn" href="/tags/concept"> concept <small>(3)</small></a>
-    
-    <a class="btn btn-sm btn-outline-dark tag-btn" href="/tags/programming"> programming <small>(5)</small></a>
+    <a class="btn btn-sm btn-outline-dark tag-btn" href="/tags/programming"> programming <small>(1)</small></a>
     
 </ul>
     </main>

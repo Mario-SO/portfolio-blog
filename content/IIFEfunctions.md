@@ -1,6 +1,6 @@
 ---
 date: 2022-08-01T14:39:32+02:00
-draft: false
+draft: true
 tags: [Concept, JavaScript, Programming]
 title: "IIFE Functions in JavaScript"
 ---

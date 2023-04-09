@@ -3,42 +3,43 @@ languageCode: en-us
 title: Mario S.O
 
 taxonomies:
-  tag: tags
+    tag: tags
 
 permalinks:
-  post: /:filename/
+    post: /:filename/
 
 params:
-  dateFormat: 2 Jan, 2006
-  footerText: blog.mariodev.xyz
+    dateFormat: 2 Jan, 2006
+    footerText: blog.mariodev.xyz
+    googlefonts: //fonts.googleapis.com/css2?family=JetBrains+Mono
 
 markup:
-  defaultMarkdownHandler: goldmark
-  goldmark:
-    extensions:
-      definitionList: true
-      footnote: true
-      linkify: true
-      strikethrough: true
-      table: true
-      taskList: true
-      typographer: true
-    parser:
-      attribute: true
-      autoHeadingID: true
-    renderer:
-      hardWraps: false
-      unsafe: true
-      xHTML: false
-  highlight:
-    codeFences: true
-    hl_Lines: ""
-    lineNoStart: 1
-    lineNos: false
-    lineNumbersInTable: true
-    noClasses: true
-    style: monokai
-    tabWidth: 4
-  tableOfContents:
-    endLevel: 6
-    startLevel: 2
+    defaultMarkdownHandler: goldmark
+    goldmark:
+        extensions:
+            definitionList: true
+            footnote: true
+            linkify: true
+            strikethrough: true
+            table: true
+            taskList: true
+            typographer: true
+        parser:
+            attribute: true
+            autoHeadingID: true
+        renderer:
+            hardWraps: false
+            unsafe: true
+            xHTML: false
+    highlight:
+        codeFences: true
+        hl_Lines: ""
+        lineNoStart: 1
+        lineNos: false
+        lineNumbersInTable: true
+        noClasses: true
+        style: onedark
+        tabWidth: 4
+    tableOfContents:
+        endLevel: 6
+        startLevel: 2

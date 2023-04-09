@@ -1,6 +1,6 @@
 ---
 date: 2022-12-24T21:29:24+02:00
-draft: false
+draft: true
 tags: [Thoughts]
 title: "Understanding the Nuances of Harmful Behavior: Evil vs. Ignorance and Arrogance"
 ---
