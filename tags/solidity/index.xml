@@ -1,2 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Solidity on Mario S.O</title><link>https://blog.mariodev.xyz/tags/solidity/</link><description>Recent content in Solidity on Mario S.O</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 24 Dec 2022 21:55:00 +0200</lastBuildDate><atom:link href="https://blog.mariodev.xyz/tags/solidity/index.xml" rel="self" type="application/rss+xml"/><item><title>Differences Between ERC721 and ERC1155 Token Standards</title><link>https://blog.mariodev.xyz/tokendiffs/</link><pubDate>Sat, 24 Dec 2022 21:55:00 +0200</pubDate><guid>https://blog.mariodev.xyz/tokendiffs/</guid><description>The Ethereum network is a fascinating ecosystem of smart contracts and decentralized applications. One of the most exciting features of Ethereum is the ability to create non-fungible tokens (NFTs) using different token standards such as ERC721 and ERC1155.
-ERC721: Uniquely Distinct ERC721 tokens are the original NFTs on the Ethereum network, and they represent individual, unique assets that cannot be replicated or exchanged for other tokens on a one-to-one basis. They are ideal for creating digital assets that require proof of ownership or authenticity, such as artwork or collectibles.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Solidity on Mario S.O</title>
+    <link>https://blog.mariodev.xyz/tags/solidity/</link>
+    <description>Recent content in Solidity on Mario S.O</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 24 Dec 2022 21:55:00 +0200</lastBuildDate><atom:link href="https://blog.mariodev.xyz/tags/solidity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Differences Between ERC721 and ERC1155 Token Standards</title>
+      <link>https://blog.mariodev.xyz/tokendiffs/</link>
+      <pubDate>Sat, 24 Dec 2022 21:55:00 +0200</pubDate>
+      
+      <guid>https://blog.mariodev.xyz/tokendiffs/</guid>
+      <description>The Ethereum network is a fascinating ecosystem of smart contracts and decentralized applications. One of the most exciting features of Ethereum is the ability to create non-fungible tokens (NFTs) using different token standards such as ERC721 and ERC1155.
+ERC721: Uniquely Distinct ERC721 tokens are the original NFTs on the Ethereum network, and they represent individual, unique assets that cannot be replicated or exchanged for other tokens on a one-to-one basis. They are ideal for creating digital assets that require proof of ownership or authenticity, such as artwork or collectibles.</description>
+    </item>
+    
+  </channel>
+</rss>
