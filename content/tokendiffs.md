@@ -1,6 +1,6 @@
 ---
 date: 2022-12-24T21:55:00+02:00
-draft: false
+draft: true
 tags: [Solidity, Programming]
 title: "Differences Between ERC721 and ERC1155 Token Standards"
 ---

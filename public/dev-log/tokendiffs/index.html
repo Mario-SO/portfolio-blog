@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="generator" content="Hugo 0.111.3">
   
-  <meta name="description" content="Dev-Log">
+  <meta name="description" content="The Ethereum network is a fascinating ecosystem of smart contracts and decentralized applications. One of the most exciting features of Ethereum is the ability to create non-fungible tokens (NFTs) using different token standards such as ERC721 and ERC1155.
+ERC721: Uniquely Distinct ERC721 tokens are the original NFTs on the Ethereum network, and they represent individual, unique assets that cannot be replicated or exchanged for other tokens on a one-to-one basis. They are ideal for creating digital assets that require proof of ownership or authenticity, such as artwork or collectibles.">
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>" />
   <style>
@@ -11153,9 +11154,7 @@
 </style>
   
   
-  
-  
-  <title>Mario S.O</title>
+  <title>Differences Between ERC721 and ERC1155 Token Standards | Mario S.O</title>
   <style>
     body {
         background-color: beige;
@@ -11288,23 +11287,42 @@
     <main id="main">
       
 
-<h1 class="page-title">Dev-Log</h1>
-
-
-<p>
-  <a class="font-125" href="https://blog.mariodev.xyz/day01/">Day01 - The Journey Begins</a>
-  <br>
-   
-<i data-feather="calendar"></i>
-<time datetime="2023-04-08">8 Apr, 2023</time>
-
-<br />
-<i data-feather="tag"></i>
- 
-<a class="btn btn-sm btn-outline-dark tag-btn" href="https://blog.mariodev.xyz/tags/chatting">Chatting</a>
- 
-
-</p>
+<h1>Differences Between ERC721 and ERC1155 Token Standards</h1>
+<p>The Ethereum network is a fascinating ecosystem of smart contracts and decentralized applications. One of the most exciting features of Ethereum is the ability to create non-fungible tokens (NFTs) using different token standards such as ERC721 and ERC1155.</p>
+<h2 id="erc721-uniquely-distinct">ERC721: Uniquely Distinct</h2>
+<p>ERC721 tokens are the original NFTs on the Ethereum network, and they represent individual, unique assets that cannot be replicated or exchanged for other tokens on a one-to-one basis. They are ideal for creating digital assets that require proof of ownership or authenticity, such as artwork or collectibles.</p>
+<p>The ERC721 token standard defines a set of rules for creating and managing NFTs on the Ethereum network. Developers can use this standard to create contracts that issue ERC721 tokens, which can be bought, sold, and traded on various marketplaces.</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-solidity" data-lang="solidity"><span style="display:flex;"><span><span style="color:#c678dd">contract</span> <span style="color:#e5c07b">ERC721Token</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#7f848e">// Define variables and mappings here
+</span></span></span><span style="display:flex;"><span><span style="color:#7f848e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#7f848e">// Function to create a new ERC721 token
+</span></span></span><span style="display:flex;"><span><span style="color:#7f848e"></span>  <span style="color:#c678dd">function</span> <span style="color:#61afef;font-weight:bold">mint</span>(<span style="color:#e5c07b">address</span> <span style="color:#e06c75">_to</span>, <span style="color:#e5c07b">uint256</span> <span style="color:#e06c75">_tokenId</span>) <span style="color:#c678dd">public</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#7f848e">// Mint new token and assign ownership to _to
+</span></span></span><span style="display:flex;"><span><span style="color:#7f848e"></span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#7f848e">// Other functions for transferring and managing tokens
+</span></span></span><span style="display:flex;"><span><span style="color:#7f848e"></span>}
+</span></span></code></pre></div><h2 id="erc1155-complex-assets">ERC1155: Complex Assets</h2>
+<p>ERC1155 tokens are a newer token standard on the Ethereum network that allows for the creation of more complex digital assets. Unlike ERC721 tokens, ERC1155 tokens can contain multiple types of assets within a single contract, making them ideal for creating digital assets with multiple components or elements.</p>
+<p>For example, a game developer could create an ERC1155 token that represents a game character with multiple attributes, such as weapons, armor, and other equipment. This allows for more flexible and dynamic gameplay experiences, as players can customize their characters with different items.</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-solidity" data-lang="solidity"><span style="display:flex;"><span><span style="color:#c678dd">contract</span> <span style="color:#e5c07b">ERC1155Token</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#7f848e">// Define variables and mappings here
+</span></span></span><span style="display:flex;"><span><span style="color:#7f848e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#7f848e">// Function to create a new ERC1155 token with multiple assets
+</span></span></span><span style="display:flex;"><span><span style="color:#7f848e"></span>  <span style="color:#c678dd">function</span> <span style="color:#61afef;font-weight:bold">mint</span>(<span style="color:#e5c07b">address</span> <span style="color:#e06c75">_to</span>, <span style="color:#e5c07b">uint256</span>[] <span style="color:#c678dd">memory</span> <span style="color:#e06c75">_tokenIds</span>, <span style="color:#e5c07b">uint256</span>[] <span style="color:#c678dd">memory</span> <span style="color:#e06c75">_amounts</span>, <span style="color:#e5c07b">bytes</span> <span style="color:#c678dd">memory</span> <span style="color:#e06c75">_data</span>) <span style="color:#c678dd">public</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#7f848e">// Mint new token and assign ownership to _to
+</span></span></span><span style="display:flex;"><span><span style="color:#7f848e"></span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#7f848e">// Other functions for transferring and managing tokens
+</span></span></span><span style="display:flex;"><span><span style="color:#7f848e"></span>}
+</span></span></code></pre></div><h3 id="key-differences">Key Differences</h3>
+<p>There are several key differences between ERC721 and ERC1155 token standards:</p>
+<p>ERC721 tokens represent individual, unique assets, while ERC1155 tokens can contain multiple types of assets within a single contract.
+ERC721 tokens have a fixed supply, while the supply of ERC1155 tokens can be adjusted.
+ERC721 tokens are typically used to represent individual assets such as artwork or collectibles, while ERC1155 tokens are more often used for complex digital assets that contain multiple components or elements.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Both ERC721 and ERC1155 are powerful token standards for creating non-fungible tokens on the Ethereum network. ERC721 tokens are well-suited for representing individual, unique assets, while ERC1155 tokens are better for complex digital assets that contain multiple components or elements.</p>
+<p>By understanding the differences between ERC721 and ERC1155, developers can make an informed decision about which token standard is the best fit for their specific project requirements. Whether you&rsquo;re creating digital art, virtual real estate, or a complex gaming experience, Ethereum&rsquo;s NFT ecosystem has a token standard that can meet your needs.</p>
 
 
 
@@ -11314,7 +11332,9 @@
 <ul>
     <a class="btn btn-sm btn-outline-dark tag-btn" href="/">📝 Blog</a>
     
-    <a class="btn btn-sm btn-outline-dark tag-btn" href="/tags/chatting"> chatting <small>(1)</small></a>
+    <a class="btn btn-sm btn-outline-dark tag-btn" href="/tags/solidity"> solidity <small>(1)</small></a>
+    
+    <a class="btn btn-sm btn-outline-dark tag-btn" href="/tags/programming"> programming <small>(1)</small></a>
     
 </ul>
     </main>
