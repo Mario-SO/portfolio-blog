@@ -1,7 +1,7 @@
 ---
 date: 2023-04-08T04:10:05-04:00
 draft: false
-tags: [Chatting]
+tags: [chatting]
 title: "Day01 - The Journey Begins"
 ---
 

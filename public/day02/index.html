@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="generator" content="Hugo 0.111.3">
   
-  <meta name="description" content="Everything starts here Today will officially be my first day on my journey into becoming a full time smart contract auditor.
-It is not my actual first day, maybe the 5th or 6th, but this first days served for a couple of things.
-Trainning my algortihm The other day I saw the importance of sinknig yourself into the topic you are trying to learn. In this case, Twitter is the way I started to embed myself into the world of smart contract auditing, following a bunch of well-known auditors and people in the space.">
+  <meta name="description" content="Today I went on and after doing some Ethernaut challenges, I decided to try and go through open challenges on Code4rena.
+Prepared my environment, opened filter4rena, and started looking for some vulns.
+First finding When starting to look at the contracts I quickly found this line of code that caught my attention:
+ERC20(token).transfer(msg.sender, amount); Even though this was my first ever real audit, I have been reading a lot of blog posts and common vulnerabilities, so I knew that this line of code was considered a vulnerability because it doesn’t check the return value of the transfer function, and some tokens do not revert when the transfer fails but instead return false.">
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>" />
   <style>
@@ -11155,7 +11156,7 @@ Trainning my algortihm The other day I saw the importance of sinknig yourself in
 </style>
   
   
-  <title>Day01 - The Journey Begins | Mario S.O</title>
+  <title>Day02 - People don&#39;t read standards | Mario S.O</title>
   <style>
     body {
         background-color: beige;
@@ -11288,33 +11289,25 @@ Trainning my algortihm The other day I saw the importance of sinknig yourself in
     <main id="main">
       
 
-<h1>Day01 - The Journey Begins</h1>
-<h1 id="everything-starts-here">Everything starts here</h1>
-<p>Today will officially be my first day on my journey into becoming a full time smart contract auditor.</p>
-<p>It is not my actual first day, maybe the 5th or 6th, but this first days served for a couple of things.</p>
-<h2 id="trainning-my-algortihm">Trainning my algortihm</h2>
-<p>The other day I saw the importance of sinknig yourself into the topic you are trying to learn. In this case, Twitter is the way I started to embed myself into the world of smart contract auditing, following a bunch of well-known auditors and people in the space.</p>
-<p>This was the first step into the rabbit hole, but I needed to do more. I needed to start reading the articles and papers that these people were sharing, and that&rsquo;s where the twitter algorithm comes in.</p>
-<p>I don&rsquo;t need to search much to discover new cool blogs or useful websites, the algorithm does it for me. I just need to keep reading and liking the content I find interesting.</p>
-<h2 id="getting-my-tools-ready">Getting my tools ready</h2>
-<p>In this first five or so days, I was ablt to quickly create what I think are two useful tools, not only for me, but also for the community.</p>
-<h3 id="useful-websites">Useful websites</h3>
-<ul>
-<li>
-<p><a href="https://sec-eth.xyz">sec-eth.xyz</a>: A websites that compiles all the security related resources I have found so far. It is a work in progress, but I think it is already useful.</p>
-</li>
-<li>
-<p><a href="filter4rena.vercel.app">filter4rena</a>: This is quite a useful tool for someone starting out auditing <a href="https://code4rena.com/">code4rena</a>. It is a simple filter that allows you to filter vulnerabilities by severity or fuzzy search for a specific vulnerability.</p>
-</li>
-</ul>
-<h3 id="dev-stuff">Dev stuff</h3>
-<p>In terms of my dev environment, I have been using <a href="https://code.visualstudio.com/">VSCode</a> with the <a href="https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity">Solidity</a> extension. I&rsquo;m a <a href="https://book.getfoundry.sh/">Foundry</a> enjoyer so that&rsquo;s my testing framework of choice. Also a bunch of extensions to make my life easier, like the <strong>solidity visual developer</strong> one from <a href="https://consensys.net/diligence/">ConsenSys Diligence</a> and a couple more.</p>
-<h2 id="engage">Engage</h2>
-<p>Another crucial part of this journey is to engage with the community. Talk to people on Twitter, join the discord channels, and participate in the conversations, you will not only learn a shit ton of new things but also make cool connections.</p>
-<h2 id="wrapping-up">Wrapping up</h2>
-<p>This post was kinda lenghty, next ones won&rsquo;t be like this. I will try to make this posts as useful as possible for a newcomer, therefore, they will include new learnings and technical stuff I find cool to share.</p>
-<p>I have some experience coding, but I consider myself quite a junior in Solidity, so if you are in the same situation, welcome and have fun learning with me.</p>
-<p>Consider giving a follow <a href="https://twitter.com/mariodev__">@mariodev__</a>. See you soon mate, and keep hacking!</p>
+<h1>Day02 - People don&#39;t read standards</h1>
+<p>Today I went on and after doing some <a href="https://ethernaut.openzeppelin.com/">Ethernaut</a> challenges, I decided to try and go through open challenges on <a href="https://code4rena.com/">Code4rena</a>.</p>
+<p>Prepared my environment, opened <a href="https://filter4rena.vercel.app/">filter4rena</a>, and started looking for some vulns.</p>
+<h1 id="first-finding">First finding</h1>
+<p>When starting to look at the contracts I quickly found this <a href="https://github.com/code-423n4/2023-04-caviar/blob/cd8a92667bcb6657f70657183769c244d04c015c/src/Factory.sol#L152">line of code</a> that caught my attention:</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-solidity" data-lang="solidity"><span style="display:flex;"><span><span style="color:#e06c75">ERC20</span>(<span style="color:#e06c75">token</span>).<span style="color:#e5c07b">transfer</span>(<span style="color:#e5c07b">msg</span>.<span style="color:#e5c07b">sender</span>, <span style="color:#e06c75">amount</span>);
+</span></span></code></pre></div><p>Even though this was my first ever <em>real</em> audit, I have been reading a lot of blog posts and common vulnerabilities, so I knew that this line of code was considered a vulnerability because it doesn&rsquo;t check the return value of the <code>transfer</code> function, and some tokens do not <code>revert</code> when the transfer fails but instead return <code>false</code>.</p>
+<p>It is really easy to fix, just use the <code>safeTransfer</code> function from openzeppelin lib:</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-solidity" data-lang="solidity"><span style="display:flex;"><span><span style="color:#e06c75">ERC20</span>(<span style="color:#e06c75">token</span>).<span style="color:#e06c75">safeTransfer</span>(<span style="color:#e5c07b">msg</span>.<span style="color:#e5c07b">sender</span>, <span style="color:#e06c75">amount</span>);
+</span></span></code></pre></div><p>Same thing happens with the <code>transferFrom</code> function.</p>
+<p>This is now considered a <em>Low severity</em> vulnerability, but not so long ago it was considered a <em>Medium severity</em> vulnerability, see <a href="https://code4rena.com/reports/2021-09-yaxis/#m-02-erc20-return-values-not-checked">this</a> audit report from <a href="https://twitter.com/cmichelio">@cmichelio</a></p>
+<h1 id="familiarize-with-standards">Familiarize with standards</h1>
+<p>Did you know that <em>$USDT</em> doesn&rsquo;t follow the ERC20 standard? It is a bit weird, but it is true. Therefore, using <em>$USDT</em> as the <code>token</code> parameter, will result in a <code>revert</code>.</p>
+<h2 id="the-catch">The catch</h2>
+<p>Hehe, you might be thinking: <em>&ldquo;Damn, first day and I already found a vulnerability, this guy knows what he is doing&rdquo;</em></p>
+<p>The real thing is that no, I have no Idea what I am doing, I&rsquo;m just lurking around and reading stuff, but I&rsquo;m still not able to craft a proper <em>POC</em> so my scope is really on <em>QA</em> and <em>Low severity</em> vulnerabilities.</p>
+<p>In fact <strong>(here is the catch)</strong> this is such a simple and easy to spot vulnerability that the automatic <em>4nalyzer</em> from <em>Code4rena</em> already found it, not only this one but even TWO MEDIUM SEVERITY VULNERABILITIES, and they immediately become common knowledge and are not accountable for reward.</p>
+<p>Pretty crappy that this happened while I was just about to submit my first <em>low severity</em>.</p>
+<p>Some people even think that the <em>4nalyzer</em> could be next top auditor 😅</p>
 
 
 
