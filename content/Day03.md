@@ -27,12 +27,12 @@ Off-by-one errors are very common (not only in smart contracts), so it always ma
 
 ---
 
-I liked this one in particular because almost the same reason as the first one, it is something so easily overlooked, and a mistake that even the most experienced programmers make.
+I liked this one in particular for almost the same reason as the first one, it is something so easily overlooked, and a mistake that even the most experienced programmers make, so even if you don't find any particular vulnerability, you can still help the developer by pointing out these things.
 
 # Not following EIPs / Standards
 
 ---
-Ethereum Improvement Proposals and in general standards (like RFCs) often have very detailed instructions on how different functions/implementations should behave in different scenarios. Not following these is very bad for composability (after all, the reason for these standards is that you can rely on a certain behavior) and it can also result in vulnerabilities. In my experience, there are often slight details (e.g., not reverting when one should revert or not following the specified rounding behavior) that are ignored by implementers.
+*Ethereum Improvement Proposals* and in general standards (like RFCs) often have very detailed instructions on how different functions/implementations should behave in different scenarios. Not following these is very bad for **composability** (after all, the reason for these standards is that you can rely on a certain behavior) and it can also result in vulnerabilities. In my experience, there are often slight details (e.g., not reverting when one should revert or not following the specified rounding behavior) that are ignored by implementers.
 
 ---
 
