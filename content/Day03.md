@@ -5,7 +5,7 @@ tags: [tips]
 title: "Day03 - Smart Contract Auditing Heuristics"
 ---
 
-I found [this](https://github.com/OpenCoreCH/smart-contract-auditing-heuristics) cool repo on Github that has a list of heuristics for auditing smart contracts. I thought it would be a good idea to go through them and see if I can find more interesting.
+I found [this](https://github.com/OpenCoreCH/smart-contract-auditing-heuristics) cool repo on Github that has a list of heuristics for auditing smart contracts. I thought it would be a good idea to go through the ones I found interesting.
 
 # Code asymmetries
 
@@ -18,12 +18,12 @@ Asymmetries in these function pairs (e.g., forgetting to unset a field or to sub
 
 ---
 
-This one might seem obvious, and it is, but the idea of this repo doesn't seem to be to give you the key to the audit kingdom, but to give you a list of things to look for on every project, because they are things that might be overlooked and are actually quite common.
+This one might seem obvious, and it is, but the idea of this repo doesn't seem to be to give you the key to the audit kingdom, but to give you a list of things to look for on every project, because they are things that might be **overlooked** and are actually quite **common**.
 
 # Off-by-one errors
 
 ---
-Off-by-one errors are very common (not only in smart contracts), so it always makes sense to think about the boundaries. Is <= correct in this context or should < be used? Should a variable be set to the length of a list or the length - 1? Should an iteration start at 1 or 0?
+Off-by-one errors are very common (not only in smart contracts), so it always makes sense to think about the boundaries. Is `<=` correct in this context or should `<` be used? Should a variable be set to the length of a list or the `length - 1`? Should an iteration start at `1` or `0`?
 
 ---
 
@@ -37,3 +37,20 @@ Ethereum Improvement Proposals and in general standards (like RFCs) often have v
 ---
 
 Well, this one may be familiar if you read my previous [post](https://blog.mariodev.xyz/day02/) ;)
+
+# Behavior when src == dst
+
+---
+In a lot of smart contracts, there are functions where you have to specify a source (or sender) and a destination (or recipient). Sometimes, the programmer did not think about what happens when these (user-specified) parameters are equal, which can result in undesired behavior. For instance, the balance of the source and destination may be cached in the beginning, in which case you can inflate your balance by specifying yourself as the source and the destination.
+
+---
+
+I just finished watching an interview [100proof - Receiving a 150k Bug Bounty, Web3 Bounty Hunting and Smart Contract Auditing](https://www.youtube.com/watch?v=NEmwfl-zLuw) and while writing this post and listening to it in the background 100proof mentioned this exact same thing.
+
+This just assures me that this is a very good thing to test for, maybe not specifically for finding a vulnerability, but to make sure that the code is behaving as expected.
+
+# Wrapping up
+
+I think this is a very good list of things to look for when auditing a smart contract, and I will definitely be using it in the future. I hope you found it useful as well.
+
+I intended to write some code today, but I had some work to do on my *job*, so I didn't get to it. I will try to write some code asap and show some POCs, this will also serve as a good way to improve my POC skills.
