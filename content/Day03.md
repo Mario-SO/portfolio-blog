@@ -45,11 +45,11 @@ In a lot of smart contracts, there are functions where you have to specify a sou
 
 ---
 
-I just finished watching an interview [100proof - Receiving a 150k Bug Bounty, Web3 Bounty Hunting and Smart Contract Auditing](https://www.youtube.com/watch?v=NEmwfl-zLuw) and while writing this post and listening to it in the background 100proof mentioned this exact same thing.
+I just finished watching an interview [100proof - Receiving a 150k Bug Bounty, Web3 Bounty Hunting and Smart Contract Auditing](https://youtu.be/NEmwfl-zLuw) and while writing this post and listening to it in the background 100proof mentioned this exact same thing.
 
 This just assures me that this is a very good thing to test for, maybe not specifically for finding a vulnerability, but to make sure that the code is behaving as expected.
 
-# Wrapping up
+## Wrapping up
 
 I think this is a very good list of things to look for when auditing a smart contract, and I will definitely be using it in the future. I hope you found it useful as well.
 
