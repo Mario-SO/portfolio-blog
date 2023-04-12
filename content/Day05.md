@@ -5,7 +5,7 @@ tags: [audit]
 title: "Day05 - 3 attack vectors"
 ---
 
-Today I was licky to get in time to an [@opensensepw](https://twitter.com/opensensepw) discord study session where [@mis4nthr0pic](https://twitter.com/mis4nthr0pic) was going through a couple of attack vectors in the [Solidity-Security-Compendium](https://github.com/obheda12/Solidity-Security-Compendium)
+Today I was lucky to get in time to an [@opensensepw](https://twitter.com/opensensepw) discord study session where [@mis4nthr0pic](https://twitter.com/mis4nthr0pic) was going through a couple of attack vectors in the [Solidity-Security-Compendium](https://github.com/obheda12/Solidity-Security-Compendium)
 
 # Signature Malleability
 
