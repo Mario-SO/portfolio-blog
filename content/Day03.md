@@ -1,7 +1,7 @@
 ---
 date: 2023-04-10T04:55:09-04:00
 draft: false
-tags: [tips]
+tags: [audit]
 title: "Day03 - Smart Contract Auditing Heuristics"
 ---
 
