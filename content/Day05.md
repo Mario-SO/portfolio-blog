@@ -20,9 +20,9 @@ This is quite a math heavy thing when you start looking into how it actually wor
 
 `v` is the last byte, while `r` and `s` is simply the signature split in half. The `v` is the recovery ID, which can have two values: `0` or `1`, corresponding to two sides of the y-axis.
 
-By knowing this couple of this (and as far as I understood), you will have problems if the only thing you check to verify the signature is the `r` and `s` values. This is because the `v` value can be manipulated to make the signature valid because of the symetrical nature of the [curve](https://user-images.githubusercontent.com/35583758/229375008-254586ef-177c-4111-9aa6-60d42ff6a251.png).
+By knowing this couple of things *(and as far as I understood)*, you will have problems if the only thing you check to verify the signature is the `r` and `s` values. This is because the `v` value can be manipulated to make the signature valid because of the symetrical nature of the [curve](https://user-images.githubusercontent.com/35583758/229375008-254586ef-177c-4111-9aa6-60d42ff6a251.png).
 
-Nowadays OpenZeppelin has a library that will ensure you are not vulnerable to this attack vector.
+Nowadays OpenZeppelin has a library that will make sure you are not vulnerable to this attack vector.
 
 # Oracle Price Manipulation
 
@@ -52,7 +52,7 @@ contract DelegateCallProxy {
     }
 }
 ```
-If you see something like this anywhere, first of all, feel sorry for the dev that will get fired, secondly, create a POC that show how you exploit this and contact the dev team.
+If you see something like this somewhere, first of all, feel sorry for the dev that will get fired, secondly, create a POC that show how you exploit this and contact the dev team.
 
 Our attack contract will look like this:
 
@@ -78,12 +78,12 @@ contract Attack {
 
 The steps will be the follwing:
 
-1. The attacker sends 100 ether to the DelegateCallProxy contract.
-2. The attacker deploys the Attacker contract to the network.
-3. The attacker crafts a malicious payload to call the stealEther function of the Attacker contract using delegate call. This can be done by encoding the function signature.
+1. People send money to the DelegateCallProxy contract.
+2. The attacker deploys the Attacker contract.
+3. The attacker crafts a malicious payload to call the stealFunds function of the Attacker contract using delegate call.
 4. The attacker calls the execute function of the DelegateCallProxy contract, passing the address of the Attacker contract and the malicious payload as arguments.
 5. The DelegateCallProxy contract performs a delegate call to the Attacker contract, executing the stealEther function in the context of the DelegateCallProxy contract's storage.
-6. The stealEther function transfers the DelegateCallProxy contract's balance (100 ether) to the attacker's address.
+6. The stealEther function transfers the DelegateCallProxy contract's balance to the attacker's address.
 
 If you want to know how to perform step 3, you can check my previous post about [Calldata & Foundry](https://blog.mariodev.xyz/day04/)
 
