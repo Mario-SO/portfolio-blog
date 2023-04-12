@@ -1,3 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tips on Mario S.O</title><link>https://blog.mariodev.xyz/tags/tips/</link><description>Recent content in tips on Mario S.O</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 10 Apr 2023 04:55:09 -0400</lastBuildDate><atom:link href="https://blog.mariodev.xyz/tags/tips/index.xml" rel="self" type="application/rss+xml"/><item><title>Day03 - Smart Contract Auditing Heuristics</title><link>https://blog.mariodev.xyz/day03/</link><pubDate>Mon, 10 Apr 2023 04:55:09 -0400</pubDate><guid>https://blog.mariodev.xyz/day03/</guid><description>I found this cool repo on Github that has a list of heuristics for auditing smart contracts. I thought it would be a good idea to go through the ones I found interesting.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tips on Mario S.O</title>
+    <link>https://blog.mariodev.xyz/tags/tips/</link>
+    <description>Recent content in tips on Mario S.O</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Apr 2023 04:55:09 -0400</lastBuildDate><atom:link href="https://blog.mariodev.xyz/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Day03 - Smart Contract Auditing Heuristics</title>
+      <link>https://blog.mariodev.xyz/day03/</link>
+      <pubDate>Mon, 10 Apr 2023 04:55:09 -0400</pubDate>
+      
+      <guid>https://blog.mariodev.xyz/day03/</guid>
+      <description>I found this cool repo on Github that has a list of heuristics for auditing smart contracts. I thought it would be a good idea to go through them and see if I can find more interesting.
 Code asymmetries In many projects, there should be some symmetries for different functions.
-For instance, a withdraw function should (usually) undo all the state changes of a deposit function and a delete function should undo all the state changes of the corresponding add function.</description></item></channel></rss>
+For instance, a withdraw function should (usually) undo all the state changes of a deposit function and a delete function should undo all the state changes of the corresponding add function.</description>
+    </item>
+    
+  </channel>
+</rss>
