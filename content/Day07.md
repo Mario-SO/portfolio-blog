@@ -1,6 +1,6 @@
 ---
 date: 2023-04-14T09:17:33-04:00
-draft: true
+draft: false
 tags: [chatting]
 title: "Day07 - One of those days"
 ---
