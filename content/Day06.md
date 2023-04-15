@@ -1,7 +1,7 @@
 ---
 date: 2023-04-13T12:09:20-04:00
 draft: false
-tags: [CTF]
+tags: [CTF, key 💡]
 title: "Day06 - VIP_Bank"
 ---
 
