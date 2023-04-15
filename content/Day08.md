@@ -7,17 +7,17 @@ title: "Day08 - Going deeper into the EVM"
 
 # As we were saying...
 
-Today I went on and tried the [EVM Through CTFs](https://www.evmthroughctfs.com/) challenges and oh god are they good.
+Today I went on and tried the [EVM Through CTFs](https://www.evmthroughctfs.com/) challenges and, *oh god* are they good.
 
 Even though the first challenge is a bit of a warmup (especially if you read my previous post [Day04 - Calldata & Foundry](https://blog.mariodev.xyz/day04/)) it rapidly gets harder and harder, I'm actually stuck in the last part of challenge one, but I'll get there.
 
-But today I wanted to dive deeper into `opcodes` and `stack` as in the 3rd part of this first challenge.
-
 # Opcodes & Stack resources
 
-The first thing I did was to look at the [EVM Opcodes](https://ethervm.io/) page and [evm.codes](https://www.evm.codes/) too, I think they are the best and only resource you really need to understand how evm works.
+The first thing I did was to look at the [EVM Opcodes](https://ethervm.io/) and [evm.codes](https://www.evm.codes/) webpages, I think they are the best and only resource you really need to understand how evm works.
 
-Personally found the [playground](https://www.evm.codes/playground) very useful, but the other webpage is also great for reference.
+Personally I prefer the [playground](https://www.evm.codes/playground) provided in *evm.codes* so that's the one I use the most.
+
+---
 
 # The challenge
 
@@ -45,7 +45,11 @@ I was getting the value `0x1c` which in decimal is `28`, but still this value co
 
 I don't think it makes sense here to go `opcode` by `opcode` and explain what they do, If you want you can take the contract and try to understand it yourself by doing what I said in the previous section.
 
-The contract bascially run a series of operations to properly get the arguments we passed in the `calldata` and do some operation with them. In this case the formula it was running to get the result was `a * 8 + b` -> `3 * 8 + 4 = 28`.
+The contract bascially run a series of operations to properly get the arguments we passed in the `calldata` and do some operation with them. In this case the formula it was running to get the result was 
+
+```javascript
+a * 8 + b` -> `3 * 8 + 4 = 28
+```
 
 So to get the value `13` we need to pass `a = 1` and `b = 5` in the `calldata`.
 
