@@ -21,7 +21,7 @@ Personally found the [playground](https://www.evm.codes/playground) very useful,
 
 # The challenge
 
-You are presented with this unverified [ontract](https://etherscan.io/address/0x36ce5aa25b99cf6eb019aafd149b97b32cdd4a5b#code) and you need to understand what it does and finally build your own `calldata` so the contract returns a certain value.
+You are presented with this unverified [contract](https://etherscan.io/address/0x36ce5aa25b99cf6eb019aafd149b97b32cdd4a5b#code) and you need to understand what it does and finally build your own `calldata` so the contract returns a certain value.
 
 # The solution
 
