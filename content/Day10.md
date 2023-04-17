@@ -2,7 +2,7 @@
 date: 2023-04-17T11:13:25-04:00
 draft: false
 tags: [evm, CTF]
-title: "Day10 - Same bytecode, different results"
+title: "Day10 - Same bytecode, different code"
 ---
 
 Continuing with the [EVM Through CTFs](https://www.evmthroughctfs.com/) challenges, today I was able to solve a pretty interesting challenge.
