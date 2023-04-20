@@ -5,7 +5,7 @@ tags: [audit]
 title: "Day12 - Weponizing Gas"
 ---
 
-Today, reading through some past reports on [Solodit](https://solodit.xyz/) I found out about this interesting exploit that is known under the name of *63/64 rule*.
+Today, reading through some past reports on [Solodit](https://solodit.xyz/) I found out about this interesting exploit that is known under the name of *1/64 rule*.
 
 The *EVM* limits the total gas forwarded on to 63/64ths of the total `gasleft()` (and silently reduces it to this value if we try to send more)
 
