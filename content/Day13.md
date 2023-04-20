@@ -61,7 +61,7 @@ The task is to write within the `MAIN` macro below, huff code that retrieves the
     0x00            // [0x00, BALANCE, CALLER]
     mstore          // []
 
-    // return 40 bytes of memory starting at offset 0
+    // return 64 bytes of memory starting at offset 0
     0x40        // [0x40]
     0x00        // [0x00, 0x40]
     return      // []  
@@ -82,7 +82,7 @@ This is the correct solution, but it is more interesting to see the mistake I ma
     0x01            // [0x01, BALANCE]
     mstore          // []
 
-    // return 40 bytes of memory starting at offset 0
+    // return 64 bytes of memory starting at offset 0
     0x40        // [0x40]
     0x00        // [0x00, 0x40]
     return      // []  
