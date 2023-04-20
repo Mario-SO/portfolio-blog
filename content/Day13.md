@@ -49,7 +49,9 @@ Not really that difficult (if you know how the *EVM* works) even comments explai
 
 ## Bonus[0]
 
-Won't be doing the second one becuase is basically the same as the first one, so will jump to the third one because it is the one that I made the first mistake, a silly one, but really important and fundamental.
+Won't be doing the second one becuase is basically the same as the first one, so will jump to the third one.
+
+It is the one in which I made a mistake, a silly one, but really important and fundamental.
 
 The task is to write within the `MAIN` macro below, huff code that retrieves the ether balance of the address that sent the transaction, also known as msg.sender in solidity.
 
