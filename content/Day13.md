@@ -43,7 +43,7 @@ When first looking at huff, I thought their docs where going to be my very best 
 }
 ```
 
-Not really that difficult (if you know how the *EVM* works) even comments explain the code really clearly, so I will be doing the second one as a bonus.
+Not really that difficult (if you know how the *EVM* works) even comments explain the code really clearly, so I will be doing the third one as a bonus.
 
 ---
 
