@@ -1,11 +1,11 @@
 ---
 date: 2023-04-20T08:51:40-04:00
 draft: false
-tags: [huff, key 💡]
+tags: [huff, key 🔑]
 title: "Day13 - Huff, learning & bonuses"
 ---
 
-Yooooo, first of all I want to thank anyone reading this, it keeps me motivated knowing that there is someone out there reading my posts, so thank you!
+Yooooo, first of all I want to thank anyone reading this, it keeps me motivated knowing that there is someone out there reading my posts so, thank you!
 
 Shoutout to [@0xMackenzieM](https://twitter.com/0xMackenzieM) who talked to me via DM giving me some feedback on my approach with this blog. If I ever get nearly half on the knowledge he has, don't doubt a single second that I will pay it forward.
 
@@ -25,7 +25,7 @@ Basically, return the `msg.value` we have in solidity but using huff.
 
 # The solution
 
-When first looking at huff, I thought their docs where going to be my very best friend, but I was wrong, the real docs that you want to suck yourslef into are the *EVM opcodes* docs. (I mean, their docs are helpful, but you must first dig into some opcode stuff to feel a bit more confortable with huff)
+When first looking at huff, I thought their docs were going to be my very best friend, but I was wrong, the real docs that you want to suck yourslef into are the *EVM opcodes* docs. (I mean, their docs are helpful, but you must first dig into some opcode stuff to feel a bit more confortable with huff)
 
 ### Talk is really cheap, show me the code
 
@@ -43,15 +43,11 @@ When first looking at huff, I thought their docs where going to be my very best 
 }
 ```
 
-Not really that difficult (if you know how the *EVM* works) even comments explain the code really clearly, so I will be doing the third one as a bonus.
+Not really that difficult (if you know how the *EVM* works) even comments explain the code really clearly, so I will be doing the third one as a bonus which is the one in which I made the first mistake, a silly one, but really important and fundamental.
 
 ---
 
 ## Bonus[0]
-
-Won't be doing the second one becuase is basically the same as the first one, so will jump to the third one.
-
-It is the one in which I made the first mistake, a silly one, but really important and fundamental.
 
 The task is to write within the `MAIN` macro below, huff code that retrieves the ether balance of the address that sent the transaction, also known as msg.sender in solidity.
 
@@ -91,7 +87,7 @@ This is the correct solution, but it is more interesting to see the mistake I ma
 }
 ```
 
-This was my first approach, but the thing I was not getting here is the `offset`. I was seeing it as array indexes and they, first of all, are `hex` values and, second of all, they are `bytes` not `indexes`, each variable has its own size, so the `offset` is the number of bytes that you want to skip, not the index of some imaginary stupid array.
+This was my first approach, but the thing I was not getting here is the `offset` (even though in the first challenge I thought I got it). I was seeing it as array indexes, and they, first of all, are `hex` values and, second of all, they are `bytes` not `indexes`, each variable has its own size, so the `offset` is the number of bytes that you want to skip in memory to place that item, not the index of some imaginary stupid array.
 
 I was really mixing concepts here, why the `0x40` made sense in my head, but the `0x00` and `0x01` didn't? No idea to be honest. Learning consists on this.
 
@@ -123,3 +119,5 @@ And the [code](https://gist.github.com/Mario-SO/c988b26e4c4f6e24228bac6d5591d940
 Well what a day, I did some really useless stuff, learned some huff, and reinforced some knowledge too.
 
 As you could see today, even things that you are supose to know, will take time until you actually internalize them, so don't be afraid to make mistakes, because you will learn from them.
+
+Hope you learned something new with me today, and I will see you tomorrow!

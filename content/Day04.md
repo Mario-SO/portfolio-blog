@@ -1,7 +1,7 @@
 ---
 date: 2023-04-11T10:53:41-04:00
 draft: false
-tags: [evm, key 💡]
+tags: [evm, key 🔑]
 title: "Day04 - Calldata & Foundry"
 ---
 
