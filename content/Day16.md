@@ -36,6 +36,8 @@ It is really simple, just like many **OPCODEs** like `retur`, `iszero`... `jumpi
 
 So it is crucial that the instruction right before the `jumpi` is a label and there is already in the stack either a `0` or `1` resulting from instructions `iszero`, `eq`...
 
+---
+
 # FooBar
 
 The task is to write within the `MAIN` macro below, huff code that mimics 2 solidity functions.
@@ -86,7 +88,7 @@ Uh pretty scary right? No worries, let's break it down.
 
 ```javascript
 // Get function signature
-0x00 calldataload
+0x00 calldataload   // [calldata]
 0xe0 shr            // [__FUNC_SIG]
 ```
 Here we are getting the first 4 bytes of the `calldata` (the data sent to the contract) which is the function signature, and we are storing it in the stack. 
@@ -104,7 +106,7 @@ dup1 __FUNC_SIG(bar) eq bar jumpi
 
 In the code I broke it down so it is easier to follow the stack state, but look how simple it is when you put it all together, rigth?
 
-The thing to take from this one is that you wil be using `dup1` **OPCODE** a lot, it duplicates the first element in the stack and this is key because when you perform an operation like `eq` or `iszero`, this will take values off the stack and you need to keep the original value to perform the jump.
+The thing to take from this one is that you will be using `dup1` **OPCODE** a lot, it duplicates the first element in the stack and this is key because when you perform an operation like `eq` or `iszero`, this will take values off the stack and you need to keep the original value to perform the jump.
 
 ### Returning values
 
