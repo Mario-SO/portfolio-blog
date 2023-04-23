@@ -2,7 +2,7 @@
 date: 2023-04-23T12:00:02-04:00
 draft: false
 tags: [huff]
-title: "Day16 - They see me huffing, they hatin'."
+title: "Day16 - They see me huffing, they hatin'"
 ---
 
 Hehe sorry, but I can't stop playing with huff, It is cool when you start to be able to fix your own mistakes, I think that's a point in which you are starting to understand new stuff.
