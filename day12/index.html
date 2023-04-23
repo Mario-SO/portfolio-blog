@@ -6,8 +6,8 @@ I still don’t fully understand how this works though, but I’ll try to explai
 </span></span><span style=display:flex><span>    <span style=color:#98c379>&#34;OptimismPortal: insufficient gas to finalize withdrawal&#34;</span>
 </span></span><span style=display:flex><span>);
 </span></span></code></pre></div><hr><p>The problem here is that the <em>EVM</em> has a specification that limits the amount of gas that can be sent to an external function call. This limit is set to <strong>63/64ths</strong> of the total <code>gas_left()</code> at that point in the contract execution.</p><p>However, when the gas limit is very large, the remaining <strong>1/64th</strong> of gas can be greater than a pre-defined value called the <em>FINALIZE_GAS_BUFFER</em>. When this happens, the amount of gas forwarded to the external function call would be less than what was actually specified by the contract.</p><p>As a side note, this is one really good use case for <em>fuzz-testing</em>.</p><h2 id=wrapping-up>Wrapping up</h2><p>If you want to see the <em>POC</em> of this exploit, you can check it out in the <a href=https://app.sherlock.xyz/audits/contests/38>Sherlock</a> report. It is quite long but really interesting (and the report is using foundry ;D )</p><h3>🏷 All tags</h3><ul><a class="btn btn-sm btn-outline-dark tag-btn" href=/>📝 Blog</a>
-<a class="btn btn-sm btn-outline-dark tag-btn" href=/tags/huff>huff <small>(2)</small></a>
 <a class="btn btn-sm btn-outline-dark tag-btn" href=/tags/key>key <small>(3)</small></a>
+<a class="btn btn-sm btn-outline-dark tag-btn" href=/tags/huff>huff <small>(3)</small></a>
 <a class="btn btn-sm btn-outline-dark tag-btn" href=/tags/evm>evm <small>(4)</small></a>
 <a class="btn btn-sm btn-outline-dark tag-btn" href=/tags/ctf>ctf <small>(4)</small></a>
 <a class="btn btn-sm btn-outline-dark tag-btn" href=/tags/chatting>chatting <small>(4)</small></a>
