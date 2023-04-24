@@ -49,9 +49,7 @@ read:
 
 ### What's that [SLOT0]?
 
-Good question, I'm glad you asked! The `SLOT0` is a **FREE STORAGE POINTER**. It's a special pointer that points to the first storage slot of the contract. It's a constant value that can be used to access the storage of the contract.
-
-You can take a look at huff docs to learn more about it.
+Good question, I'm glad you asked! The `SLOT0` is a **FREE STORAGE POINTER**. It's a constant value that can be used to access the storage of the contract, it is part of huff. You can take a look at huff docs to learn more about it.
 
 The pop statement is there for the same reason as in the previous challenge, go check it out if you haven't already!
 
