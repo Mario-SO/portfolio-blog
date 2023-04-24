@@ -15,7 +15,7 @@ Ethereum smart contract storage is organized as a sparse `32-byte` key-value sto
 
 In Solidity, you can interact with storage using for example state variables. These high-level construct abstracts away the details of storage and automatically generate EVM bytecode to handle storage operations using `SSTORE` and `SLOAD` opcodes.
 
-In huff, we use `SSTORE` and `SLOAD` to directly interact with storage. The huff code we previously discussed is an excellent example of this.
+In huff, we use `SSTORE` and `SLOAD` to directly interact with storage.
 
 # The challenge
 
@@ -46,6 +46,12 @@ read:
     0x00 mstore       // []
     0x20 0x00 return
 ```
+
+### What's that [SLOT0]?
+
+Good question, I'm glad you asked! The `SLOT0` is a **FREE STORAGE POINTER**. It's a special pointer that points to the first storage slot of the contract. It's a constant value that can be used to access the storage of the contract.
+
+You can take a look at huff docs to learn more about it.
 
 The pop statement is there for the same reason as in the previous challenge, go check it out if you haven't already!
 
