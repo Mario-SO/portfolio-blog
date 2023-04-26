@@ -19,7 +19,7 @@ Well, if you are a daily reader, there might be some days that I might not post 
 
 # The next challenge
 
-The next challenge is not about the evm nor about huff, I will try to start bringing good and valuable POCs for vulnerabilities I find during my study perioda of past reports and writeups with my newly met people in the [opensense](https://twitter.com/opensensepw) community, that's why posts might take longer to be published.
+The next challenge is not about the evm nor about huff, I will try to start bringing good and valuable POCs for vulnerabilities I find during my study period of past reports and writeups with my newly met people in the [opensense](https://twitter.com/opensensepw) community, that's why posts might take longer to be published.
 
 ## Wrapping up
 
