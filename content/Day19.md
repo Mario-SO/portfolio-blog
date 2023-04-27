@@ -11,7 +11,9 @@ The learning is starting to flourish XD. As I told you in a previous post, I joi
 
 First of all this is also known as **inflation attack on EIP-4626**.
 
-In simple terms, the inflation attack on EIP-4626 is an exploit where an attacker manipulates the exchange rate between a vault's shares and its underlying assets, causing a victim to lose their deposited assets. This is made possible due to the lack of slippage protection in the deposit function when a vault has low liquidity.
+In simple terms, the inflation attack on EIP-4626 is an exploit where an attacker manipulates the exchange rate between a vault's shares and its underlying assets, causing a victim to lose their deposited assets.
+
+This is made possible due to the lack of slippage protection in the deposit function when a vault has low liquidity.
 
 Here's a step-by-step illustration of the attack:
 
@@ -27,4 +29,6 @@ Here's a step-by-step illustration of the attack:
 
 # How to prevent it?
 
-The proposed mitigation for this attack is to introduce a "decimal offset" along with "virtual assets and shares" to better define the exchange rate, even when the vault is empty. This would make it more difficult for an attacker to manipulate the exchange rate and would require a significantly larger donation to inflate it.
+The proposed mitigation for this attack is to introduce a "decimal offset" along with "virtual assets and shares" to better define the exchange rate, even when the vault is empty.
+
+This would make it more difficult for an attacker to manipulate the exchange rate and would require a significantly larger donation to inflate it.
