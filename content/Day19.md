@@ -1,5 +1,5 @@
 ---
-date: 2023-04-27T13:35:47-04:00
+date: 2023-04-26T13:35:47-04:00
 draft: false
 tags: [audit]
 title: "Day19 - 1 wei attack"
