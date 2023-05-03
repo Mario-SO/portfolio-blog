@@ -1,6 +1,6 @@
 ---
 date: 2023-04-28T15:55:50-04:00
-draft: true
+draft: false
 tags: [audit]
 title: "Day21...26 - Finished EigenLayer audit"
 ---
