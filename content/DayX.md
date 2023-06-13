@@ -1,8 +1,8 @@
 ---
 date: 2023-06-13T09:27:36-04:00
-draft: true
+draft: false
 tags: [chatting]
-title: "DayX"
+title: "Day X - Rejected"
 ---
 
 As terrible as a day could get. I was rejected for an internship at Nethermind, and it was the simplest interview imaginable – just a casual technical chat where I was asked about various technical topics.
