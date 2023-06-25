@@ -2,10 +2,10 @@
 date: 2023-04-28T15:55:50-04:00
 draft: false
 tags: [audit]
-title: "Day21...26 - Finished EigenLayer audit"
+title: "Day21 - Thanks for reading"
 ---
 
-Wow, what a week, I've been working on the EigenLayer audit with my team for the last 5 days, and I'm super happy with the results, I've learned a lot.
+<!-- Wow, what a week, I've been working on the EigenLayer audit with my team for the last 5 days, and I'm super happy with the results, I've learned a lot.
 
 # The auditing process
 
@@ -25,4 +25,14 @@ We also had a `main` channel where we talked about anything, also to plan out me
 
 # More comming soon...
 
-As this will be a long post, I will be updating it lil by lil, so stay tuned for more updates.
+As this will be a long post, I will be updating it lil by lil, so stay tuned for more updates. -->
+
+# The end
+
+I'm happy on how this turned out, I shared a 20 day journey where I went from 0 auditing to getting an actual team, I know I said I would share about the projects we audited, but that won't happen, I'm sorry, I have other plans for both the blog direction and also my personal career.
+
+Auditing is fun, and more so doing it on a team of such cool people, but it requires a huge mental which I don't have right now.
+
+It'd be awesome for me to be able to take private audits from time to time to get some side income, but getting it as a full time job is not for me.
+
+I hope this past 20 days have been useful for you, and if you have any questions, feel free to reach out to me on twitter [@mariodev__](https://twitter.com/mariodev__).

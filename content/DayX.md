@@ -1,6 +1,6 @@
 ---
 date: 2023-06-13T09:27:36-04:00
-draft: false
+draft: true
 tags: [chatting]
 title: "Day X - Rejected"
 ---
